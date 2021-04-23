@@ -9,10 +9,15 @@ Our goal is to write a Dockerfile for the Flask container.
 First, `git clone` this repository, or simple copy the file `app.py`. 
 
 This is a demonstration web server written in Flask (Python). 
-To compile Python code, we can use the official image, 
-or install Python packages in any of the official base images.
 
-The entire code is in a single source file (`app.py`), 
+In the Dockerfile you will need to have:
+```
+Python => 3.8
+Pip version 3
+Flask
+```
+
+The app code is in a single source file (`app.py`), 
 and should be executed like this:
 
 ```
